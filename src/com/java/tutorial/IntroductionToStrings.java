@@ -10,6 +10,14 @@ public class IntroductionToStrings extends Tutorial{
 
     @Override
     public void run() {
-        System.out.println(this.text);
+        super.run();
+        double myDouble = 23.6;
+        System.out.println("1. String Concatenation");
+        System.out.println(this.text + " " + "Bob");
+        System.out.println("Printing a Double " + myDouble + ".");
+        this.printSubSeparator();
+
+        System.out.println("2. System.out.printf formatted strings");
+
     }
 }

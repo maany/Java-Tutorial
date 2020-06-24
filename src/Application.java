@@ -1,4 +1,5 @@
 import com.java.tutorial.IntroductionToStrings;
+import com.java.tutorial.Loops;
 import com.java.tutorial.Tutorial;
 
 import java.util.ArrayList;
@@ -9,6 +10,7 @@ public class Application {
 
     Application(){
         this.registerTutorial(new IntroductionToStrings());
+        this.registerTutorial(new Loops());
     }
     public static void main(String[] args){
         Application app = new Application();
@@ -20,8 +22,9 @@ public class Application {
     }
     public void run(){
         for (Tutorial tut: this.tutorials){
-            System.out.println("Running " + tut.name);
             tut.run();
+            System.out.println("*****************************");
+            System.out.println();
         }
     }
 }
