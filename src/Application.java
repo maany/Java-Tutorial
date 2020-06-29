@@ -1,6 +1,4 @@
-import com.java.tutorial.IntroductionToStrings;
-import com.java.tutorial.Loops;
-import com.java.tutorial.Tutorial;
+import com.java.tutorial.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +9,9 @@ public class Application {
     Application(){
         this.registerTutorial(new IntroductionToStrings());
         this.registerTutorial(new Loops());
+//        this.registerTutorial(new UserInput());
+        this.registerTutorial(new IntroToArray());
+        this.registerTutorial(new MultiDimensionalArrays());
     }
     public static void main(String[] args){
         Application app = new Application();
